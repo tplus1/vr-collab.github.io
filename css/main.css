@@ -9,3 +9,9 @@ body {
   top:0;
   z-index: -10;
 }
+
+#posts {
+  margin-top: 100vh;
+  height: 1000px;
+  background-color: white;
+}
