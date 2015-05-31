@@ -14,13 +14,24 @@ description: main page
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div id='hero-unit' draggable="false">
+      <img draggable="false" id='logo' src='assets/images/VRcollab.png'/>
+      <p>
+        We are still working on the VR collaboration platform. Please sign-up with us and we will keep you posted on our progress.
+      </p>
+      <input id='email-input' placeholder='example@email.com' type='email'/>
+      <input value='Submit' type='button'/>
+    </div>
+
     <div id='posts'>
         {% for post in site.posts %}
-        <div>
+        <div class='post'>
           <a href="{{ post.url }}">{{ post.title }}</a>
-        <div>
+          <p>{{ post.content | strip_html | truncatewords:75 }}</p>
+        </div>
         {% endfor %}
     </div>
+
     <script>
       CARDBOARD_DEBUG = false;
     </script>

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 #canvas {
@@ -8,10 +9,43 @@ body {
   position: fixed;
   top:0;
   z-index: -10;
+  min-height: 30em;
 }
 
 #posts {
   margin-top: 100vh;
   height: 1000px;
   background-color: white;
+}
+
+#hero-unit{
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: -70vh;
+  width: 300px;
+  background-color: rgba(255,255,255,0.3);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+#logo {
+  margin: auto;
+  width: 5em;
+  height: 2em;
+  display: block;
+}
+
+#hero-input input {
+  margin: auto;
+  display: block;
+}
+
+.post {
+  background-color: #ddd;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 10px;
 }
