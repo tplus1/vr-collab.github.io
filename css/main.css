@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: sans-serif;
 }
 
 #canvas {
@@ -12,7 +11,7 @@ body {
   min-height: 30em;
 }
 
-#posts {
+#content  {
   margin-top: 100vh;
   height: 1000px;
   background-color: white;
@@ -25,16 +24,17 @@ body {
   margin-left:auto;
   margin-right:auto;
   margin-top: -70vh;
-  width: 300px;
+  width: 50em;
   background-color: rgba(255,255,255,0.3);
   padding: 1em;
   border-radius: 10px;
+  box-shadow: -2px 2px 0 0 rgba(0,0,0,0.10);
 }
 
 #logo {
   margin: auto;
-  width: 5em;
-  height: 2em;
+  width: 10em;
+  height: 4em;
   display: block;
 }
 

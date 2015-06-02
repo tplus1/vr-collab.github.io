@@ -12,24 +12,79 @@ description: main page
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>desertVR</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
-    <div id='hero-unit' draggable="false">
+    <div id='hero-unit' class='jumbotron' draggable="false">
       <img draggable="false" id='logo' src='assets/images/VRcollab.png'/>
       <p>
-        We are still working on the VR collaboration platform. Please sign-up with us and we will keep you posted on our progress.
+        A place where VR content is created collaboratively 
+      </p>
+      <p>
+        Please sign-up with us and we will keep you posted on our progress.
       </p>
       <input id='email-input' placeholder='example@email.com' type='email'/>
       <input value='Submit' type='button'/>
     </div>
 
-    <div id='posts'>
-        {% for post in site.posts %}
-        <div class='post'>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <p>{{ post.content | strip_html | truncatewords:75 }}</p>
-        </div>
-        {% endfor %}
+
+    <div class='container-fluid' id='content'>
+      <section id='about-us'>
+        <header class='page-header'>
+          <h1>
+            About Us
+          </h1>
+        </header>
+
+        <p>
+          We are a newly funded startup company in Singapore that is created the VR platform for VR developer to create VR content collaboratively.
+        </p>
+        
+      </section>
+
+      <section id='jobs'>
+        <header class='page-header'>
+          <h1>
+            Jobs
+            <small>
+              We are hiring!
+            </small>
+          </h1>
+        </header>
+        Role:
+        <p>
+          Javascript/WebGL developer
+          You will be using threejs and nodejs to develop a tool to make the web VR developer life easier. 
+        </p>
+        Responsibilities:
+        <p>
+          <br/>
+          To develop and create our platform
+          To participate in the complete software development life cycle. 
+        </p>
+        <p>
+          Requirements:
+          <br/>
+          Must have strong object oriented webgl and javascript skills
+          Must have the passion about tech and geeky stuff especially VR
+        </p>
+        <p>
+          Additional Info:
+          <br/>
+          Working location is based in Singapore
+        </p>
+        <p>
+          Contact Person:
+          <br/>
+          Please email your resume/CV with photo & expected salary to wizztjh@gmail.com
+        </p>
+      </section>
+        <!-- {% for post in site.posts %} -->
+        <!-- <div class='post'> -->
+        <!--   <a href="{{ post.url }}">{{ post.title }}</a> -->
+        <!--   <p>{{ post.content | strip_html | truncatewords:75 }}</p> -->
+        <!-- </div> -->
+        <!-- {% endfor %} -->
     </div>
 
     <script>
