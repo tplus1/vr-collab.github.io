@@ -13,7 +13,14 @@ body {
 
 #content  {
   margin-top: 100vh;
-  background-color: white;
+  background-color: #607D8B;
+  color: #FFFFFF;
+  font-size: 24px;
+  text-align: left;
+}
+
+#jobs {
+  background-color: #FFFFFF;
 }
 
 #hero-unit{
@@ -27,6 +34,14 @@ body {
   padding: 1em;
   border-radius: 10px;
   box-shadow: -2px 2px 0 0 rgba(0,0,0,0.10);
+}
+#about-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.job {
+  background-color: #CFD8DC;
 }
 
 #logo {
