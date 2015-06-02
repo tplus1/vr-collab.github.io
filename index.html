@@ -10,86 +10,85 @@ description: main page
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <title>desertVR</title>
+    <title>VRcollab</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
-    <div id='hero-unit' class='jumbotron' draggable="false">
+    <div id='hero-unit' class='jumbotron container' draggable="false">
       <img draggable="false" id='logo' src='assets/images/VRcollab.png'/>
-      <p>
+      <p class='lead'>
         A place where VR content is created collaboratively 
       </p>
       <p>
         Please sign-up with us and we will keep you posted on our progress.
       </p>
-      <input id='email-input' placeholder='example@email.com' type='email'/>
-      <input value='Submit' type='button'/>
+      <a id='keep-me-posted' class="btn btn-lg btn-success" target='_blank' href="http://eepurl.com/bo_YtH" role="button">Keep me posted</a>
     </div>
-
 
     <div class='container-fluid' id='content'>
-      <section id='about-us'>
-        <header class='page-header'>
-          <h1>
-            About Us
-          </h1>
-        </header>
+      <div class='container'>
+        <section id='about-us'>
+          <header class='page-header'>
+            <h1>
+              About Us
+            </h1>
+          </header>
 
-        <p>
-          We are a newly funded startup company in Singapore that is created the VR platform for VR developer to create VR content collaboratively.
-        </p>
-        
-      </section>
+          <p>
+            We are a newly funded startup company in Singapore that is created the VR platform for VR developer to create VR content collaboratively.
+          </p>
 
-      <section id='jobs'>
-        <header class='page-header'>
-          <h1>
-            Jobs
-            <small>
-              We are hiring!
-            </small>
-          </h1>
-        </header>
-        Role:
-        <p>
-          Javascript/WebGL developer
-          You will be using threejs and nodejs to develop a tool to make the web VR developer life easier. 
-        </p>
-        Responsibilities:
-        <p>
-          <br/>
-          To develop and create our platform
-          To participate in the complete software development life cycle. 
-        </p>
-        <p>
-          Requirements:
-          <br/>
-          Must have strong object oriented webgl and javascript skills
-          Must have the passion about tech and geeky stuff especially VR
-        </p>
-        <p>
-          Additional Info:
-          <br/>
-          Working location is based in Singapore
-        </p>
-        <p>
-          Contact Person:
-          <br/>
-          Please email your resume/CV with photo & expected salary to wizztjh@gmail.com
-        </p>
-      </section>
-        <!-- {% for post in site.posts %} -->
-        <!-- <div class='post'> -->
-        <!--   <a href="{{ post.url }}">{{ post.title }}</a> -->
-        <!--   <p>{{ post.content | strip_html | truncatewords:75 }}</p> -->
-        <!-- </div> -->
-        <!-- {% endfor %} -->
+        </section>
+
+        <section id='jobs'>
+          <header class='page-header'>
+            <h1>
+              Jobs
+              <small>
+                We are hiring!
+              </small>
+            </h1>
+          </header>
+          <p>
+            Role:
+            <br/>
+            Javascript/WebGL developer
+            You will be using threejs and nodejs to develop a tool to make the web VR developer life easier. 
+          </p>
+          Responsibilities:
+          <p>
+            <br/>
+            To develop and create our platform
+            To participate in the complete software development life cycle. 
+          </p>
+          <p>
+            Requirements:
+            <br/>
+            Must have strong object oriented webgl and javascript skills
+            Must have the passion about tech and geeky stuff especially VR
+          </p>
+          <p>
+            Additional Info:
+            <br/>
+            Working location is based in Singapore
+          </p>
+          <p>
+            Contact Person:
+            <br/>
+            Please email your resume/CV with photo & expected salary to
+            <a href='mailto:wizztjh@gmail.com'>wizztjh@gmail.com</a>
+          </p>
+        </section>
+          <!-- {% for post in site.posts %} -->
+          <!-- <div class='post'> -->
+          <!--   <a href="{{ post.url }}">{{ post.title }}</a> -->
+          <!--   <p>{{ post.content | strip_html | truncatewords:75 }}</p> -->
+          <!-- </div> -->
+          <!-- {% endfor %} -->
+      </div>
     </div>
 
-    <script>
-      CARDBOARD_DEBUG = false;
-    </script>
     <script src="lib/three.js"></script>
     <script src="lib/VRControls.js"></script>
     <script src="lib/VREffect.js"></script>
